@@ -1,1 +1,31 @@
+name: Train GAN Model
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Download images from Google Drive
+        run: |
+          echo "You will replace this with download command"
+
+      - name: Train GAN Model
+        run: |
+          echo "Replace this with GAN training command"
