@@ -1,0 +1,7 @@
+numpy
+Pillow
+requests
+tensorflow==1.15
+matplotlib
+dlib
+scipy
